@@ -1,54 +1,91 @@
-<html>
-    <head>
-        <title> Sing up for viltrum forces</title>
-         <style>
-        /* Definindo o estilo para o corpo da página */
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up for Viltrum Forces</title>
+    <style>
         body {
-            height: 100vh; /* Altura total da janela */
-            margin: 0; /* Removendo a margem padrão */
-            display: flex; /* Usando flexbox */
-            background-color: #5e5f5c; /* Cor de fundo */
-            justify-content: center; /* Alinhando horizontalmente */
-            align-items: center; /* Alinhando verticalmente */
-            font-family: Arial, sans-serif; /* Definindo uma fonte */
+            height: 100vh;
+            margin: 0;
+            background-color: #5e5f5c;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('space_background.jpg'); /* opcional */
+            background-size: cover;
+            background-position: center;
         }
-        /* Estilizando o botão */
+
+        .container {
+            background-color: #5e5f5c;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 0 20px #454643;
+        }
+
+        .container h1 {
+            font-size: 32px;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            color: #f1f1f1;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
         button {
-            
-            padding: 10px 20px; /* Espaçamento interno */
-            font-size: 16px; /* Tamanho da fonte */
-            cursor: pointer; /* Apontador do mouse */
-            border: 0; /* Sem borda */
-            background-color: #ffffff /* Cor de fundo */
-            color: black; /* Cor do texto */
-            border-radius: 0px; /* Bordas arredondadas */
-            transition: background-color 0.5s; /* Efeito de transição */
+            padding: 12px 28px;
+            font-size: 18px;
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.4s, transform 0.2s;
         }
 
-        /* Efeito ao passar o mouse */
         button:hover {
-            background-color: rgb(167, 167, 167); /* Cor de fundo ao passar o mouse */
+            background-color: #c0392b;
+            transform: scale(1.05);
         }
-        </style>
-    </head>
-    <body>
-        
-        
-            <img src="Viltrum-Empire-Logo.jpg" alt="Descrição da imagem" width="350">
-        <div class="container">
-        <div>
-        <h1><span style="color: rgb(255, 255, 255);">O imperio precisa de você!</span></h1>
-        <p><span style="color: rgb(255, 255, 255);">garanta sua vaga no grande impêrio viltrumita.</span></p>
-        <p><span style="color: rgb(255, 255, 255);">clique aqui e coloque sua informação para se juntar</span></p>
-        
-        </div>
-        <a href="viltrum enlist loding.html?destino=viltrum enlist info.html">
-        <p><button> Start </button></p>
-        </a>
-        <div class="flex">
-        <div>
-        <img src="viltrumite_worker.png" alt="emperor" width="200">
-        </div>
-    </body>
 
+        .logo {
+            display: block;
+            margin: 0 auto 25px auto;
+            width: 180px;
+        }
+
+        .viltrumite-img {
+            margin-top: 25px;
+            width: 150px;
+            transition: transform 0.3s;
+        }
+
+        .viltrumite-img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="Viltrum-Empire-Logo.jpg" alt="Logo do Império Viltrumita" class="logo">
+
+        <h1>O Império precisa de você!</h1>
+        <p>Garanta sua vaga no grandioso império viltrumita.</p>
+        <p>Clique abaixo e forneça suas informações para se juntar.</p>
+
+        <a href="viltrum enlist loding.html?destino=viltrum enlist info.html">
+            <button>Alistar-se</button>
+        </a>
+
+       
+    </div>
+
+</body>
 </html>
